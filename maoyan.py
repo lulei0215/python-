@@ -41,7 +41,5 @@ def main(offset):
         write_to_file(item)
 
 if __name__ == '__main__':
-    # for i in range(10):
-    #     main(i*25)
     pool = Pool()
     pool.map(main,[i*25 for i in range(10)])
